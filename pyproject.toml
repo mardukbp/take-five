@@ -1,0 +1,19 @@
+[project]
+name = "take-five"
+version = "0.1.0"
+description = "A barebones Django starter project"
+authors = [
+    {name = "Marduk Bolaños", email = "mardukbp@mac.com"},
+]
+dependencies = [
+    "django==4.2.13",
+    "django-extensions==3.2.3",
+    "django-jazzmin==2.6.0",
+    "django-stubs==4.2.7",
+    "ipython>=8.24.0",
+    "pytest>=8.2.1",
+    "pytest-django>=4.8.0",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
