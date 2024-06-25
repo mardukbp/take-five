@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from keywords.features.parameters.models import KeywordArg
+from apps.keywords.features.parameters.models import KeywordArg
 
 
 class ParametersAdmin(admin.TabularInline):

@@ -5,7 +5,7 @@ from django.db.models import Model, CharField, TextField
 if TYPE_CHECKING:
     from django.db.models.manager import RelatedManager # type: ignore
 
-from keywords.features.parameters.models import KeywordArg
+from apps.keywords.features.parameters.models import KeywordArg
 
 
 class Keyword(Model):

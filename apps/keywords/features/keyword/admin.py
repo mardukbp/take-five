@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from keywords.features.parameters.admin import ParametersAdmin
+from apps.keywords.features.parameters.admin import ParametersAdmin
 
 
 class KeywordAdmin(admin.ModelAdmin):
