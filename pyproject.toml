@@ -6,7 +6,7 @@ authors = [
     {name = "Marduk Bolaños", email = "mardukbp@mac.com"},
 ]
 dependencies = [
-    "django==4.2.13",
+    "django<5",
     "django-extensions==3.2.3",
     "django-jazzmin==2.6.0",
     "django-stubs==4.2.7",
