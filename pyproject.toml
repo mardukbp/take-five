@@ -1,0 +1,16 @@
+[project]
+name = "take-five"
+version = "0.1.0"
+description = "Django improvisation"
+dependencies = [
+    "django==4.2.14",
+    "django-extensions==3.2.3",
+    "django-jazzmin==2.6.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
