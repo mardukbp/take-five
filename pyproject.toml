@@ -6,6 +6,7 @@ dependencies = [
     "django==4.2.14",
     "django-extensions==3.2.3",
     "django-jazzmin==2.6.0",
+    "django-select2>=8.2.0",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
