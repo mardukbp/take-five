@@ -3,7 +3,7 @@ name = "take-five"
 version = "0.1.0"
 description = "Django improvisation"
 dependencies = [
-    "django==4.2.14",
+    "django~=4.2.15",
     "django-extensions==3.2.3",
     "django-jazzmin==2.6.0",
 ]
