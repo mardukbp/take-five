@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:193d3ca17bb5443d44c31c28ab1d40c0777d342bec6e0ec1155f928cf4b31511"
+content_hash = "sha256:4f8d5949ee54c5574f9927aa6fb495370764dc10f82b8c0ec65e87ca1d467511"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -79,6 +79,20 @@ files = [
 ]
 
 [[package]]
+name = "django-appconf"
+version = "1.0.6"
+requires_python = ">=3.7"
+summary = "A helper class for handling configuration defaults of packaged apps gracefully."
+groups = ["default"]
+dependencies = [
+    "django",
+]
+files = [
+    {file = "django-appconf-1.0.6.tar.gz", hash = "sha256:cfe87ea827c4ee04b9a70fab90b86d704cb02f2981f89da8423cb0fabf88efbf"},
+    {file = "django_appconf-1.0.6-py3-none-any.whl", hash = "sha256:c3ae442fba1ff7ec830412c5184b17169a7a1e71cf0864a4c3f93cf4c98a1993"},
+]
+
+[[package]]
 name = "django-debug-toolbar"
 version = "4.4.6"
 requires_python = ">=3.8"
@@ -108,17 +122,46 @@ files = [
 ]
 
 [[package]]
-name = "django-jazzmin"
-version = "3.0.0"
+name = "django-select2"
+version = "8.2.1"
 requires_python = ">=3.8"
-summary = "Drop-in theme for django admin, that utilises AdminLTE 3 & Bootstrap 4 to make yo' admin look jazzy"
+summary = "This is a Django_ integration of Select2_."
 groups = ["default"]
 dependencies = [
-    "django>=4.2",
+    "django-appconf>=0.6.0",
+    "django>=3.2",
 ]
 files = [
-    {file = "django_jazzmin-3.0.0-py3-none-any.whl", hash = "sha256:95ef5d7571519c4c53c24083ec417a0db126aaf1d7dc7311e034a90e430392b3"},
-    {file = "django_jazzmin-3.0.0.tar.gz", hash = "sha256:424ac3e0f7bfd9ce973b581a66abde92035ba6c5b17605615fdf6bd97c4dcb33"},
+    {file = "django_select2-8.2.1-py3-none-any.whl", hash = "sha256:2d7f52b5cd362c4d0b1bf4caca8ad8463ae269b252eebbab4afabd762d08baf5"},
+    {file = "django_select2-8.2.1.tar.gz", hash = "sha256:dc03524c1cf7ef970e8b3ab2de76ce3179e414254fa812d8e2d2f0ba6fa487ba"},
+]
+
+[[package]]
+name = "django-selectize"
+version = "2.0"
+requires_python = ">=3.6"
+summary = "django-selectize is a Django app based on Selectize.js that help you to create Select and Multiselect widgets in Django forms."
+groups = ["default"]
+dependencies = [
+    "django>=3.2",
+]
+files = [
+    {file = "django-selectize-2.0.tar.gz", hash = "sha256:5a7c43fa2f66fb8c3826f10c3684c57ce07d5bd747d330393d947c95a3710077"},
+    {file = "django_selectize-2.0-py3-none-any.whl", hash = "sha256:cb50dca21db368e2484ffd1b96dc588fd8efe129fcb66a7572f9e4f9ef3db7a5"},
+]
+
+[[package]]
+name = "django-unfold"
+version = "0.36.0"
+requires_python = ">=3.8"
+summary = "Modern Django admin theme for seamless interface development"
+groups = ["default"]
+dependencies = [
+    "django>=3.2",
+]
+files = [
+    {file = "django_unfold-0.36.0-py3-none-any.whl", hash = "sha256:91db14952d62d592df3996034d1be0162fda833097c91b206f251c3ded461719"},
+    {file = "django_unfold-0.36.0.tar.gz", hash = "sha256:5e4307e913fcae2b54a2d094cc3dbf5a46be6f239cdc55d7e19172aa181b1804"},
 ]
 
 [[package]]
