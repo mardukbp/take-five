@@ -38,8 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_extensions'
+    'django_extensions',
+    'django_celery_beat',
+    'django_celery_results',
+    'demoapp'
 ]
+
+CELERY_BROKER_REDIS_URL="redis://localhost:6379"
+
+# save Celery task results in Django's database
+CELERY_RESULT_BACKEND = "django-db"
+
+# this allows you to schedule items in the Django admin.
+CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers.DatabaseScheduler'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
