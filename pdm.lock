@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:193d3ca17bb5443d44c31c28ab1d40c0777d342bec6e0ec1155f928cf4b31511"
+content_hash = "sha256:3a3fe0704b1467fe9e42dac07fef6ae9d221206417db08a472640b3a1275bbe4"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -63,19 +63,32 @@ files = [
 
 [[package]]
 name = "django"
-version = "4.2.15"
-requires_python = ">=3.8"
+version = "5.1"
+requires_python = ">=3.10"
 summary = "A high-level Python web framework that encourages rapid development and clean, pragmatic design."
 groups = ["default"]
 dependencies = [
-    "asgiref<4,>=3.6.0",
-    "backports-zoneinfo; python_version < \"3.9\"",
+    "asgiref<4,>=3.8.1",
     "sqlparse>=0.3.1",
     "tzdata; sys_platform == \"win32\"",
 ]
 files = [
-    {file = "Django-4.2.15-py3-none-any.whl", hash = "sha256:61ee4a130efb8c451ef3467c67ca99fdce400fedd768634efc86a68c18d80d30"},
-    {file = "Django-4.2.15.tar.gz", hash = "sha256:c77f926b81129493961e19c0e02188f8d07c112a1162df69bfab178ae447f94a"},
+    {file = "Django-5.1-py3-none-any.whl", hash = "sha256:d3b811bf5371a26def053d7ee42a9df1267ef7622323fe70a601936725aa4557"},
+    {file = "Django-5.1.tar.gz", hash = "sha256:848a5980e8efb76eea70872fb0e4bc5e371619c70fffbe48e3e1b50b2c09455d"},
+]
+
+[[package]]
+name = "django-appconf"
+version = "1.0.6"
+requires_python = ">=3.7"
+summary = "A helper class for handling configuration defaults of packaged apps gracefully."
+groups = ["default"]
+dependencies = [
+    "django",
+]
+files = [
+    {file = "django-appconf-1.0.6.tar.gz", hash = "sha256:cfe87ea827c4ee04b9a70fab90b86d704cb02f2981f89da8423cb0fabf88efbf"},
+    {file = "django_appconf-1.0.6-py3-none-any.whl", hash = "sha256:c3ae442fba1ff7ec830412c5184b17169a7a1e71cf0864a4c3f93cf4c98a1993"},
 ]
 
 [[package]]
@@ -108,17 +121,18 @@ files = [
 ]
 
 [[package]]
-name = "django-jazzmin"
-version = "3.0.0"
+name = "django-select2"
+version = "8.2.1"
 requires_python = ">=3.8"
-summary = "Drop-in theme for django admin, that utilises AdminLTE 3 & Bootstrap 4 to make yo' admin look jazzy"
+summary = "This is a Django_ integration of Select2_."
 groups = ["default"]
 dependencies = [
-    "django>=4.2",
+    "django-appconf>=0.6.0",
+    "django>=3.2",
 ]
 files = [
-    {file = "django_jazzmin-3.0.0-py3-none-any.whl", hash = "sha256:95ef5d7571519c4c53c24083ec417a0db126aaf1d7dc7311e034a90e430392b3"},
-    {file = "django_jazzmin-3.0.0.tar.gz", hash = "sha256:424ac3e0f7bfd9ce973b581a66abde92035ba6c5b17605615fdf6bd97c4dcb33"},
+    {file = "django_select2-8.2.1-py3-none-any.whl", hash = "sha256:2d7f52b5cd362c4d0b1bf4caca8ad8463ae269b252eebbab4afabd762d08baf5"},
+    {file = "django_select2-8.2.1.tar.gz", hash = "sha256:dc03524c1cf7ef970e8b3ab2de76ce3179e414254fa812d8e2d2f0ba6fa487ba"},
 ]
 
 [[package]]
